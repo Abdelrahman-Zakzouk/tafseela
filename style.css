@@ -563,7 +563,7 @@ img, svg{
 
 @font-face {
   font-family: Foda;
-  src: url(tafseela/src/foda.ttf);
+  src: url(/tafseela/src/foda.ttf);
 }
 
 .intro{
