@@ -1,6 +1,7 @@
 *
 {
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
 }
 
 body 
@@ -9,21 +10,27 @@ body
   /* background: url(bg.svg); */
   font-size: 20px;
   background-color: #1f2029;
-  background-size: 5vw;
+  /* background-size: 5vw; */
   /* width: 100%; */
-  color: white;
+  color: #d1cbb0;
   overflow:auto;
   /* overflow-y: scroll; */
   overflow-x: hidden;
   font-family: 'Tilt Neon', cursive;
-  margin-right: 0;
-  padding-right: 0.5em;
+  margin: 0;
+  padding-right: 0;
+  scroll-behavior: smooth;
 }
 
 html 
 {
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+*, html {
+
+  scroll-behavior: smooth !important;
 }
 
 /*#region Scrollbar */
@@ -158,13 +165,14 @@ body::-webkit-scrollbar-button:single-button:horizontal:increment:active {
   place-items: center;
   justify-content: center;
   align-items: center;
-  padding-top: 12px;
+  padding-top: 7vh;
   border-radius: 2vw;
-  background-color: lavender;
+  background-color: #d1cbb0;
+  color: #082032;
   width: 98vw;
-  height: 30vh;
+  height: 60vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 0.1fr 1fr 0.1fr 1fr;
   grid-template-rows: 1fr 0.1fr;
   transition-property: all;
   transition-duration: 500ms;
@@ -296,7 +304,7 @@ body::-webkit-scrollbar-button:single-button:horizontal:increment:active {
 {
   position: relative;
   font-size: 3vw;
-  font-family: 'foda', cursive;
+  font-family: 'vlax', cursive;
   animation: underline 300ms;
 }
 
@@ -321,10 +329,11 @@ body::-webkit-scrollbar-button:single-button:horizontal:increment:active {
   animation: ununderline 300ms;
 }
 
-/* .page 
+.page
 {
-
-} */
+  display: flex;
+  flex-direction: column;
+}
 
 .page-content 
 {
@@ -540,16 +549,6 @@ body::-webkit-scrollbar-button:single-button:horizontal:increment:active {
   }
 }
 
-.section1{
-  align-items: center;
-  justify-content: center;
-  /* width: 100vw; */
-  /* background: #000; */
-  gap: 5vh;
-  display: flex;
-  flex-direction: column;
-  padding-top: 10vh;
-}
 
 .letters{
   width: 50%;
@@ -563,10 +562,97 @@ img, svg{
 
 @font-face {
   font-family: Foda;
-  src: url(/tafseela/src/foda.ttf);
+  src: url(/src/foda.ttf);
+}
+
+@font-face {
+  font-family: vlax;
+  src: url(/src/Vlax.otf);
 }
 
 .intro{
   font-family: Foda;
   font-size: 3vw;
+}
+
+section{
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  /* text-align: center; */
+  height: 100vh;
+}
+
+.section1{
+  align-items: center;
+  justify-content: center;
+  /* width: 100vw; */
+  /* background: #000; */
+  gap: 5vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10vh;
+  padding-bottom: 13vh;
+}
+
+.scroll-to-top{
+  /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #d1cbb0;
+    color: #1f2029;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 100px;
+    font-size: 18px;
+    width: 8vh;
+    height: 8vh;
+}
+
+.navcolumn{
+  display: flex;
+  flex-direction: column;
+}
+
+.vl {
+  border-left: 6px solid #1f2029;
+  height: 50vh;
+  border-radius: 2vw;
+}
+
+ion-icon {
+  pointer-events :none;
+}
+
+.sections{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-inline: 5vw;
+}
+
+.sections1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* padding-inline: 15vw; */
+  /* background: #000; */
+  width: 100vw;
+  margin: 0;
+}
+
+.sectionpics{
+  margin-left: 5vw;
+  width: 40vw;
+  border-radius: 2vw;
+}
+
+.sectiontext{
+  margin-right: 5vw;
+  width: 40vw;
 }

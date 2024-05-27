@@ -2,10 +2,10 @@ function bodyLoad()
 {
   var typingEffect = new Typed(".author",
   {
-    strings: ["تفصيلة","تفصيلة","تفصيلة"],
+    strings: ["تفصيلة","&#x62A;فصيلة","&#1578;فصيلة"],
     loop: true,
     typeSpeed: 100,
-    backDelay: 1500,
+    backDelay: 2000,
     backSpeed: 80,
   })
 
@@ -17,19 +17,25 @@ function navtoggle()
   if (i === 0)
   {
     var nav = document.getElementById('nav');
-    var pg = document.getElementById('page-content');
+    var pg = document.getElementById('page');
+    var body = document.getElementById('body');
     nav.style.visibility="visible";
     nav.style.transform="translateX(200.5vw)";
-    // pg.style.filter="blur(3px)";
+    pg.style.filter="blur(3px)";
+    body.style.height="97vh";
+    body.style.overflowY="hidden";
     i++;
   }
   else if (i === 1)
   {
     var nav = document.getElementById('nav');
-    var pg = document.getElementById('page-content')
+    var pg = document.getElementById('page');
+    var body = document.getElementById('body');
     nav.style.transform="translateX(-200vw)";
     nav.style.visibility="hidden";
-    // pg.style.filter="unset";
+    pg.style.filter="unset";
+    body.style.height="auto";
+    body.style.overflowY="auto";
     i--;
     
   }
@@ -41,10 +47,13 @@ function unnavpageclk()
   if (i === 1)
   {
     var nav = document.getElementById('nav');
-    var pg = document.getElementById('page-content')
+    var pg = document.getElementById('page');
+    var body = document.getElementById('body');
     nav.style.transform="translateX(-200vw)";
     nav.style.visibility="hidden";
     pg.style.filter="unset";
+    body.style.height="auto";
+    body.style.overflowY="auto";
     i--;
   }
   
@@ -94,3 +103,22 @@ if (touch)
       barbottom.style.transform="scaleX(1)";
     }
   }
+
+
+let button = document.querySelector("button");
+let navburger = document.querySelector("nav");
+
+function toggle(display) {
+  button.style.display = display;
+}
+
+window.addEventListener('scroll',function(e) {
+  let navHeight = navburger.offsetTop;
+  let scrollHeight = window.scrollY;
+  
+  scrollHeight >= navHeight ? toggle("block") : toggle("none");
+});
+
+function back() {
+  window.scrollTo(0,0);
+}
