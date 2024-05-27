@@ -104,21 +104,6 @@ if (touch)
     }
   }
 
-
-let button = document.querySelector("button");
-let navburger = document.querySelector("nav");
-
-function toggle(display) {
-  button.style.display = display;
-}
-
-window.addEventListener('scroll',function(e) {
-  let navHeight = navburger.offsetTop;
-  let scrollHeight = window.scrollY;
-  
-  scrollHeight >= navHeight ? toggle("block") : toggle("none");
-});
-
 function back() {
   window.scrollTo(0,0);
 }
