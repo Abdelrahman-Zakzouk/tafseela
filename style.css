@@ -562,12 +562,12 @@ img, svg{
 
 @font-face {
   font-family: Foda;
-  src: url(tafseela/src/foda.ttf);
+  src: url(/tafseela/src/foda.ttf);
 }
 
 @font-face {
   font-family: vlax;
-  src: url(tafseela/src/Vlax.otf);
+  src: url(/tafseela/src/Vlax.otf);
 }
 
 .intro{
