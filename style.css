@@ -1598,21 +1598,6 @@ h3{
   direction: rtl;
 }
 
-.twoways{
-  width: 28%;
-  border: #fff solid;
-  float: right;
-}
-
-.oneway{
-  border: #fff solid;
-}
-
-.noway{
-  width: 28%;
-  border: #fff solid;
-  float: left;
-}
 * {
   box-sizing: border-box;
 }
