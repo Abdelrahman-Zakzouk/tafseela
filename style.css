@@ -404,7 +404,7 @@ section{
   justify-content: center;
   align-content: center;
   /* text-align: center; */
-  height: 100vh;
+  /*height: 170vh;*/
 }
 
 .section1{
@@ -609,7 +609,7 @@ ion-icon {
   .sections{
     flex-direction: column;
     text-align: center;
-    height: 70vh;
+    /*height: 135vh;*/
   }
 
   .sectiontext{
@@ -761,8 +761,7 @@ ion-icon {
 
   .sections{
     flex-direction: column;
-    text-align: center;
-    height: 70vh;
+    /*height: 135vh;*/
   }
 
   .sectiontext{
@@ -915,7 +914,7 @@ ion-icon {
   .sections{
     flex-direction: column;
     text-align: center;
-    height: 70vh;
+    /*height: 135vh;*/
   }
 
   .sectiontext{
@@ -1068,7 +1067,7 @@ ion-icon {
   .sections{
     flex-direction: column;
     text-align: center;
-    height: 70vh;
+    /*height: 135vh;*/
   }
 
   .sectiontext{
@@ -1490,13 +1489,13 @@ img, svg{
   font-size: 3vw;
 }
 
-section{
-  align-items: center;
+/*section{
+  /*align-items: center;
   justify-content: center;
   align-content: center;
   /* text-align: center; */
-  height: 100vh;
-}
+  /*height: 200vh;
+}*/
 
 .section1{
   align-items: center;
@@ -1545,9 +1544,7 @@ ion-icon {
 }
 
 .sections{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: inline-block;
   /* padding-inline: 15vw; */
   /* background: #000; */
   width: 100vw;
@@ -1571,3 +1568,68 @@ ion-icon {
   padding-inline: 0vw;
 }
 }
+
+.sama3i{
+  width: 40%;
+  border: #fff solid;
+  float: left;
+  
+}
+
+.qiasy{
+  width: 50%;
+  border: #fff solid;
+  float: right;
+}
+
+h1{
+  text-decoration: underline; 
+  color:rgb(131, 131, 204)
+}
+
+h3{
+  color:rgb(131, 131, 204);
+}
+
+.list{
+  width:fit-content;
+  text-align: right;
+  justify-content: center;
+  direction: rtl;
+}
+
+.twoways{
+  width: 28%;
+  border: #fff solid;
+  float: right;
+}
+
+.oneway{
+  border: #fff solid;
+}
+
+.noway{
+  width: 28%;
+  border: #fff solid;
+  float: left;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: right;
+  width: 33.33%;
+  padding: 10px;
+  border: #fff solid;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
