@@ -1534,7 +1534,7 @@ img, svg{
 }
 
 .vl {
-  border-left: 6px solid #1f2029;
+  border-left: 6px solid #858799;
   height: 50vh;
   border-radius: 2vw;
 }
@@ -1636,4 +1636,44 @@ h3{
   width: 50%;
   float: left;
 }
+.بداية{
+  border: #fff solid;
+  width: 50%;
+  float: right;
+}
+.آشوريين{
+  width: 50%;
+  float: left;
+}
+.تحريف{
+  border: #fff solid;
+  width: 50%;
+  float: right;
+}
+.فتوحات{
+  width: 40%;
+  float: left;
+}
 
+.النحو{
+  border: #fff solid;
+  width: 50%;
+
+}
+
+.سيبويه{
+  width:50%;
+  float: left;
+  
+}
+.الكتاب{
+  width: 50%;
+  float: right;
+  
+}
+
+.الحديث{
+  border: #fff solid;
+  width: 50%;
+
+}
