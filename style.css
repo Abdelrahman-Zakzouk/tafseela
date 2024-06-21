@@ -1989,11 +1989,19 @@ li{
 
 .boxes:hover .face.back p {
   font-size: 1em;
+  align-items: start;
+
 }
 
 .face.front {
   background-color: #0cbaba;
   border-radius: 15px;
+}
+
+.desc{
+  align-items: start;
+  padding-bottom: 75px;
+  margin-bottom: 75px;
 }
 
 .row-boxes{
