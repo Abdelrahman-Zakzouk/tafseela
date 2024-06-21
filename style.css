@@ -269,7 +269,6 @@ body::-webkit-scrollbar-button:single-button:horizontal:increment:active {
   position: relative;
   margin-left: auto;
   margin-right: 0;
-  width: 8vw;
 }
 
 .logo-lnk
@@ -1085,7 +1084,7 @@ ol{
 
   .logo 
   {
-    width: 100vw;
+    width: 8vw;
     border-right-width: 90px;
     padding-top: 1vh;
   }
