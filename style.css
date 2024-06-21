@@ -269,6 +269,7 @@ body::-webkit-scrollbar-button:single-button:horizontal:increment:active {
   position: relative;
   margin-left: auto;
   margin-right: 0;
+  width: 8vw;
 }
 
 .logo-lnk
