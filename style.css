@@ -173,7 +173,7 @@ body::-webkit-scrollbar-button:single-button:horizontal:increment:active {
   width: 98vw;
   height: 60vh;
   display: grid;
-  grid-template-columns: 1fr 0.1fr 1fr 0.1fr 1fr;
+  grid-template-columns: 1fr 0.1fr 1fr;
   grid-template-rows: 1fr 0.1fr;
   transition-property: all;
   transition-duration: 500ms;
@@ -440,9 +440,16 @@ section{
     height: 8vh;
 }
 
-.navcolumn{
+.navcolumnright{
   display: flex;
   flex-direction: column;
+  float: right;
+}
+
+.navcolumnleft{
+  display: flex;
+  flex-direction: column;
+  float: left;
 }
 
 .vl {
@@ -464,7 +471,7 @@ ion-icon {
   width: 100vw;
   margin: 0;
   padding-top: 10vh;
-  height: auto;
+  /*height: auto;*/
 }
 
 .section6{
@@ -1330,7 +1337,7 @@ body::-webkit-scrollbar-button:single-button:horizontal:increment:active {
   width: 98vw;
   height: 60vh;
   display: grid;
-  grid-template-columns: 1fr 0.1fr 1fr 0.1fr 1fr;
+  grid-template-columns: 1fr 0.1fr 1fr;
   grid-template-rows: 1fr 0.1fr;
   transition-property: all;
   transition-duration: 500ms;
@@ -1602,9 +1609,18 @@ section{
     height: 8vh;
 }
 
-.navcolumn{
+.navcolumnright{
   display: flex;
   flex-direction: column;
+  float: right;
+  /*width: 35%;*/
+}
+
+.navcolumnleft{
+  display: flex;
+  flex-direction: column;
+  float: left;
+  /*width: 35%;*/
 }
 
 .vl {
