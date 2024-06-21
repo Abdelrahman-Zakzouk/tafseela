@@ -1987,6 +1987,10 @@ li{
   font-size: 1em;
 }
 
+.boxes:hover .face.back p {
+  font-size: 0.9em;
+}
+
 .face.front {
   background-color: #0cbaba;
   border-radius: 15px;
