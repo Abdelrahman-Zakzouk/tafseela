@@ -406,7 +406,7 @@ section{
   justify-content: center;
   align-content: center;
   /* text-align: center; */
-  height: 100vh;
+  /*height: 100vh;*/
 }
 
 .section0{
@@ -676,7 +676,7 @@ ol{
   .sections{
     flex-direction: column;
     text-align: center;
-    height: 70vh;
+    /*height: 70vh;*/
   }
 
   .sectiontext{
@@ -829,7 +829,7 @@ ol{
   .sections{
     flex-direction: column;
     text-align: center;
-    height: 70vh;
+    /*height: 70vh;*/
   }
 
   .sectiontext{
@@ -982,7 +982,7 @@ ol{
   .sections{
     flex-direction: column;
     text-align: center;
-    height: 70vh;
+    /*height: 70vh;*/
   }
 
   .sectiontext{
