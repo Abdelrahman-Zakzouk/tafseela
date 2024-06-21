@@ -25,6 +25,7 @@ body
 html 
 {
   overflow-x: hidden;
+  overflow-y: auto;
   scroll-behavior: smooth;
 }
 
@@ -458,6 +459,18 @@ ion-icon {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /* padding-inline: 15vw; */
+  /* background: #000; */
+  width: 100vw;
+  margin: 0;
+  padding-top: 10vh;
+  height: auto;
+}
+
+.section6{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
   /* padding-inline: 15vw; */
   /* background: #000; */
   width: 100vw;
@@ -1614,6 +1627,7 @@ ion-icon {
 .title{
   font-size: 2.5vw;
 }
+}
 .content{
   display: flex;
   flex-direction: row;
@@ -1719,7 +1733,8 @@ ion-icon {
   font-family: 'fred';
   color: #d1cbb0;
   margin-top: 0;
-  padding-top: 0;
+  padding: 0;
+  list-style: inside;
 }
 
 .explanation-title{
@@ -1753,4 +1768,142 @@ p{
   color: #d1cbb0;
 }
 
+li{
+  text-align: right;
+  font-family: fred;
+}
+
+.cards {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ff568e;
+  position: relative;
+  width: 15vw;
+  height: 38vh;
+  background: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7vw;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 3vw;
+}
+
+.cards::before,
+.cards::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7vw;
+  font-weight: bold;
+  background-color: #ff568e;
+  transition: all 0.5s;
+}
+
+.cards::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.cards::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 15px;
+  color: #212121;
+}
+
+.cards:hover::before,
+.cards:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+#card1:hover:after {
+  content: "كقول حسّان : أكرم بقوم رسول الله قائدهم • إذا تفرّقت الأهواء والشّيعُ";
+}
+#card2:hover:after {
+  content: "كقول الشّاعر: ما أكثر الإخوان حين تَعُدُّهم • لكنّهم في النّائبات قليل!";
+}
+#card3:hover:after {
+  content: "كقول الشّاعر: ما أقبح التّزهيدَ من واعظ • يُزَهِّدُ النّاسَ ولا يزهد!";
+}
+#card4:hover:after {
+  content: "كقول زهير: أكرم بها خلّة ً لو أنّها صدقت • موعدَها أو لو أنّ النّصح مقبول!";
+}
+#card5:hover:after {
+  content: 'قال تعالى: " أولئك الذين اشتروا الضّلالة بالهدى والعذاب بالمغفرة، فما أصْبَرَهم على النّار!"';
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1vw;
+  padding-inline: 3vw;
+}
+
+.card {
+  /* width: 80vw; */
+  height: 50vh;
+  border-radius: 4px;
+  /* background: #212121; */
+  display: flex;
+  gap: 5px;
+  padding: .4em;
+}
+
+.card p {
+  height: 40vh;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all .5s;
+  /* background: #212121; */
+  border: 1px solid #ff5a91;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card p:hover {
+  flex: 4;
+}
+
+.card p span {
+  min-width: 14em;
+  padding: .5em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all .5s;
+  text-transform: uppercase;
+  color: #ff568e;
+  letter-spacing: .1em;
+}
+
+.card p:hover span {
+  transform: rotate(0);
+}
+
+.hide{
+  display: none;
+  flex-direction: column;
+}
+
+.card p:hover .hide{
+  display: flex;
+}
+
+.card p:hover .unhide{
+  color: #d1cbb0;
 }
