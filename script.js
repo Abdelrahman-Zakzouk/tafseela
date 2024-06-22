@@ -107,3 +107,13 @@ if (touch)
 function back() {
   window.scrollTo(0,0);
 }
+
+const themeToggle = document.querySelector(".theme-switch__checkbox");
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle('dark-mode');
+  if (document.body.classList.contains('dark-mode')) {
+    localStorage.setItem('theme', 'dark-mode');    
+  } else {
+    localStorage.removeItem('theme');    
+  }
+});
