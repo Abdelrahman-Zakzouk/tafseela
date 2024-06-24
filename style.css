@@ -1905,7 +1905,7 @@ ion-icon {
   align-items: center;
   margin-bottom: 2vh;
   font-size: 2vw;
-  color: #ffee00;
+  color:blue;
   padding-top: 0;
 }
 
@@ -2198,6 +2198,11 @@ li{
 
 .sectiontext, .sectiontextonly, .sectiontextwide, .explanation-text, .explanation-text2, .explanation-text3, .explanation-text4, .card p:hover .unhide{
   color: black;
+  transition: all 0s;
+}
+
+.dark-mode .explanation-subtitle{
+  color: #ffee00;
   transition: all 0s;
 }
 
