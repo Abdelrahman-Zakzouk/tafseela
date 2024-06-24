@@ -1681,31 +1681,6 @@ body::-webkit-scrollbar-button:single-button:horizontal:increment:active {
   transition-duration: 500ms;
 }
 
-
-
-@keyframes underline 
-{
-  0%
-  {
-    text-decoration-color: rgba(255, 255, 255, 0);
-  }
-  100%
-  {
-    text-decoration-color: rgba(255, 255, 255, 1);
-  }
-}
-@keyframes ununderline 
-{
-  0%
-  {
-    text-decoration-color: rgba(255, 255, 255, 1);
-  }
-  100%
-  {
-    text-decoration-color: rgba(255, 255, 255, 0);
-  }
-}
-
 .letters{
   width: 50%;
 }
