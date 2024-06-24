@@ -1951,6 +1951,7 @@ li{
 }
 
 .cards {
+  overflow-y:hidden;
   border-style: solid;
   border-width: 2px;
   border-color: #ff568e;
