@@ -315,7 +315,7 @@ body::-webkit-scrollbar-button:single-button:horizontal:increment {
   margin-right: auto;
   margin-left: 1vw;
   margin-top: 4vh;
-  height: 2.3vh;
+  height: 2.4vh;
   width: 17px;
   display: flex;
   flex-direction: column;
@@ -483,7 +483,7 @@ body::-webkit-scrollbar-button:single-button:horizontal:increment {
   transition: all 0.5s;
 }
 
-.author
+.site-name
 {
   position: relative;
   font-size: 3vw;
@@ -507,7 +507,7 @@ body::-webkit-scrollbar-button:single-button:horizontal:increment {
   animation: blink 0.7s infinite;
 }
 
-.author:hover 
+.site-name:hover 
 {
   animation: ununderline 300ms;
 }
@@ -834,7 +834,7 @@ ol{
     font-size: 300%;
   }
 
-  .author 
+  .site-name 
   {
     font-size: 90%;
   }
@@ -984,7 +984,7 @@ ol{
     font-size: 300%;
   }
 
-  .author 
+  .site-name 
   {
     font-size: 90%;
   }
@@ -1134,7 +1134,7 @@ ol{
     font-size: 300%;
   }
 
-  .author 
+  .site-name 
   {
     font-size: 90%;
   }
@@ -1284,7 +1284,7 @@ ol{
     font-size: 300%;
   }
 
-  .author 
+  .site-name 
   {
     font-size: 90%;
   }
@@ -1632,7 +1632,7 @@ body::-webkit-scrollbar-button:single-button:horizontal:increment:active {
   color: rgb(129, 103, 169);
 }
 
-.author
+.site-name
 {
   position: relative;
   font-size: 3vw;
@@ -1656,7 +1656,7 @@ body::-webkit-scrollbar-button:single-button:horizontal:increment:active {
   animation: blink 0.7s infinite;
 }
 
-.author:hover 
+.site-name:hover 
 {
   animation: ununderline 300ms;
 }
@@ -1679,6 +1679,31 @@ body::-webkit-scrollbar-button:single-button:horizontal:increment:active {
   margin-bottom: 20vh;
   transition-property: all;
   transition-duration: 500ms;
+}
+
+
+
+@keyframes underline 
+{
+  0%
+  {
+    text-decoration-color: rgba(255, 255, 255, 0);
+  }
+  100%
+  {
+    text-decoration-color: rgba(255, 255, 255, 1);
+  }
+}
+@keyframes ununderline 
+{
+  0%
+  {
+    text-decoration-color: rgba(255, 255, 255, 1);
+  }
+  100%
+  {
+    text-decoration-color: rgba(255, 255, 255, 0);
+  }
 }
 
 .letters{
@@ -1882,6 +1907,7 @@ ion-icon {
   justify-content: center;
   align-items: center;
   font-family: 'fred';
+  /* color: #d1cbb0; */
   margin-top: 0;
   padding: 0;
   list-style: inside;
@@ -1905,7 +1931,7 @@ ion-icon {
   align-items: center;
   margin-bottom: 2vh;
   font-size: 2vw;
-  color:blue;
+  color: #ffee00;
   padding-top: 0;
 }
 
@@ -2201,11 +2227,6 @@ li{
   transition: all 0s;
 }
 
-.dark-mode .explanation-subtitle{
-  color: #ffee00;
-  transition: all 0s;
-}
-
 .dark-mode .card p:hover .unhide{
   color: #d1cbb0;
 }
@@ -2240,4 +2261,92 @@ body{
 
 .letters{
   filter:invert(100%);
+}
+
+@media only screen and (max-width: 480px){
+
+  .page{
+    padding-top: 15vh;
+  }
+
+  .header{
+    padding-inline: 4vw;
+  }
+
+  .bartop{
+    width: 6vw;
+    height: 0.7vh;
+  }
+
+  .barmid
+  {
+    left: -0.6vw;
+    width: 6vw;
+    height: 0.7vh;
+  }
+
+  .barbottom
+  {
+    top: -1vh;
+    left: -1.15vw;
+    width: 6vw;
+    height: 0.7vh;
+  }
+
+  .theme-switch{
+    margin-top: 25vh;
+    --toggle-size: 4vw;
+  }
+
+  .interactive{
+    gap: 27vw;
+  }
+
+  .logo 
+  {
+    width: 100vw;
+    border-right-width: 90px;
+  }
+
+  .logo-lnk 
+  {
+    width: 85%;
+    font-size: 250%;
+    padding-top: 0.2vh;
+    padding-bottom: 1.5vh;
+  }
+
+  .site-name 
+  {
+    font-size: 82%;
+  }
+
+  .typed-cursor{
+    font-size: 14vw;
+  }
+
+  .letters{
+    width: 100%;
+  }
+
+  .intro{
+    font-size: 10vw;
+  }
+
+}
+
+@media only screen and (max-width: 600px){
+  
+}
+
+@media only screen and (min-width: 601px){
+  
+}
+
+@media only screen and (min-width: 768px){
+  
+}
+
+@media only screen and (min-width: 992px){
+  
 }
