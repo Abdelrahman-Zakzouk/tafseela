@@ -127,7 +127,6 @@ if (touch)
       localStorage.setItem('theme', 'dark-mode');    
     } else {
       localStorage.removeItem('theme');
-      // document.getElementById('letters').style.filter =
     }
   };
 
