@@ -1,5 +1,17 @@
-function bodyLoad() 
+const themeToggle = document.querySelector(".theme-switch__checkbox");
+const currentTheme = localStorage.getItem('theme');
+i = 0;
+const touch = isTouchDevice();
+
+
+document.addEventListener('DOMContentLoaded', function ()
 {
+  document.body.className = localStorage.getItem('theme');
+  if (document.body.className === 'dark-mode') {
+    document.getElementById('theme-switch').setAttribute('checked', true);
+  };
+  document.body.style.transition = "none"
+
   var typingEffect = new Typed(".author",
   {
     strings: ["تفصيلة","&#x62A;فصيلة","&#1578;فصيلة"],
@@ -8,10 +20,9 @@ function bodyLoad()
     backDelay: 2000,
     backSpeed: 80,
   })
+  
+});
 
-};
-
-i = 0;
 function navtoggle()
 {
   if (i === 0)
@@ -61,22 +72,21 @@ function unnavpageclk()
 
 function isTouchDevice() {
   return (('ontouchstart' in window) ||
-     (navigator.maxTouchPoints > 0) ||
-     (navigator.msMaxTouchPoints > 0));
+  (navigator.maxTouchPoints > 0) ||
+  (navigator.msMaxTouchPoints > 0));
 }
 
-const touch = isTouchDevice();
 
 if (touch)
-  {
-    function anim()
+{
+  function anim()
     {
       var bartop = document.getElementById("bartop");
       var barbottom = document.getElementById("barbottom");
       bartop.style.transform="scaleX(1)";
       barbottom.style.transform="scaleX(1)";
     }
-
+    
     function unanim()
     {
       var bartop = document.getElementById("bartop");
@@ -103,17 +113,21 @@ if (touch)
       barbottom.style.transform="scaleX(1)";
     }
   }
-
-function back() {
-  window.scrollTo(0,0);
-}
-
-const themeToggle = document.querySelector(".theme-switch__checkbox");
-themeToggle.addEventListener("click", () => {
-  document.body.classList.toggle('dark-mode');
-  if (document.body.classList.contains('dark-mode')) {
-    localStorage.setItem('theme', 'dark-mode');    
-  } else {
-    localStorage.removeItem('theme');    
+  
+  function back() {
+    window.scrollTo(0,0);
   }
-});
+  
+  
+  
+  function theme(){
+    document.body.style.transition = "all 0.5s"
+    document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')) {
+      localStorage.setItem('theme', 'dark-mode');    
+    } else {
+      localStorage.removeItem('theme');
+      // document.getElementById('letters').style.filter =
+    }
+  };
+

@@ -18,22 +18,22 @@
 	<!-- Link Google fonts -->
 	<link rel='preconnect' href='https://fonts.googleapis.com'> 
 	<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
-	<link href='https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap' rel='stylesheet'>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&amp;display=swap" rel="stylesheet">
   <!-- Link Scripting JS File & Typed Module -->
 	<script src='/tafseela/script.js'></script>
 	<script src='https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js'></script>
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
-<body onload='bodyLoad()' id="body">
+<body id="body">
 	
-  <button class="scroll-to-top" id="scroll-to-top" onclick="back()"><ion-icon size="large" name="chevron-up-outline"></ion-icon></button>
+  <button class="scroll-to-top" id="scroll-to-top" onclick="back()">
+    <ion-icon size="large" name="chevron-up-outline"></ion-icon>
+  </button>
 	
 	<div class="header" dir="ltr">
     <div class="header-content" >
@@ -45,7 +45,7 @@
           <span class="barbottom" id="barbottom">e</span>
         </div>
         <label class="theme-switch">
-          <input type="checkbox" class="theme-switch__checkbox">
+          <input type="checkbox" class="theme-switch__checkbox" onclick="theme()" id="theme-switch">
           <div class="theme-switch__container">
             <div class="theme-switch__clouds"></div>
             <div class="theme-switch__stars-container">
@@ -105,10 +105,9 @@
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <div class="page" id="page" onclick="unnavpageclk()">
     <section class="section0">
-      <img class="letters" src="/tafseela/src/ض.svg" alt="ض" style="display: block; margin: auto;">
+      <img class="letters" id="letters" src="/tafseela/src/ض.svg" alt="ض" style="display: block; margin: auto;">
       <p class="intro">معًا لإحياء اللغة العربية</p>
-    </section>
-    <section class="sections" id="1">
+      <br>
       <div class="title">بداية اللغة العربية</div>
       <div class="content">
         <div class="pic">
@@ -162,12 +161,12 @@
       </div>
     </section>
     <section class="section5" id="5">
-      <p class="center"><span class="intro2">أسلوب التعجب</span><br>هو عمل لغوي ينشئه المتعجب للتعبير عن اعجابه او كرهه للأشياء أو الأحداث أو الأشخاص</p>      
+      <p class="explanation-text4"><span class="intro2">أسلوب التعجب</span><br>هو عمل لغوي ينشئه المتعجب للتعبير عن اعجابه او كرهه للأشياء أو الأحداث أو الأشخاص</p>      
       <div class="intro2">أنواع أسلوب  التعحب</div>
       <div class="content-reversed1">
         <div class="explanation">
           <p class="explanation-title">تعجب قياسي:</p>
-          <div class="center">هو ما له أوزان محدده لا تتغير وتنقسم إلي : (ما أفعله ! ، أفعل به !)</div>
+          <div class="explanation-text4">هو ما له أوزان محدده لا تتغير وتنقسم إلي : (ما أفعله ! ، أفعل به !)</div>
             <p class="explanation-title">أمثلة:</p>
           <p class="explanation-text3">
              ما أفعله : ما أجمل صحراءنا ! , ما أروع الحرية ! , ما أجمل أن يتحلي المؤمن بالصدق !
@@ -211,11 +210,11 @@
         <hr>
         <div class="explanation">
           <p class="explanation-title">تعجب سماعي:</p>
-          <div class="center">هو ما ليس قياسي وليس له أوزان محدده</div>
+          <div class="explanation-text4">هو ما ليس قياسي وليس له أوزان محدده</div>
           <p class="explanation-title">
             أمثلة:
           </p>
-          <p class="center">
+          <p class="explanation-text4">
             سبحان الله !
             <br>
             لله درك !
@@ -225,7 +224,7 @@
             <p class="explanation-title">
             إعرابه:
             </p>
-            <p class="center">
+            <p class="explanation-text4">
             <br>
             الأوزان السماعيه لا يوجد لها إعراب ثابت (تعرب حسب الجمله)
           </p>
@@ -233,7 +232,7 @@
       </div>
     </section>
     <section class="sections" id="6">
-      <p class="center"><span class="intro2">صياغة فعل التعجب</span><br>يصاغ فعل التعجب بطريقه مباشره إذا توافرت به سبع شروط في وقت واحد</p>    
+      <p class="explanation-text4"><span class="intro2">صياغة فعل التعجب</span><br>يصاغ فعل التعجب بطريقه مباشره إذا توافرت به سبع شروط في وقت واحد</p>    
       <div class="content-no-pic">
         <div class="text-only">
           <p class="center"><span class="intro2">شروط صياغة فعل التعجب بطريقه مباشرة:</span></p>
@@ -375,7 +374,7 @@
     <div class="content-reversed">
       <div class="explanation">
         <p class="explanation-title"> إذا كان الفعل :</p>
-        <div class="center">
+        <div class="explanation-text4">
           <ul>
             <li>غير ثلاثي ( استخرج )</li>
             <li>الصفه المؤنثه منه تأتي علي وزن فعلاء ( خضر )</li>
@@ -391,7 +390,7 @@
       <hr>
       <div class="explanation">
         <p class="explanation-title"> إذا كان الفعل :</p>
-        <div class="center">
+        <div class="explanation-text4">
           <ul>
             <li>مبني للمجهول ( فُهِمَ )</li>
             <li>منفي ( لا يكذب )</li>
@@ -405,7 +404,7 @@
       <hr>
       <div class="explanation">
         <p class="explanation-title"> إذا كان الفعل :</p>
-        <div class="center">
+        <div class="explanation-text4">
           <ul>
             <li>جامد : (نعم ، بئس)</li>
             <li>غير قابل للتفاوت ( مات ، عاش )</li>
@@ -431,7 +430,7 @@
   </section>
   <div>
     <p class="explanation-title">ملاحظات هامة :</p>
-    <div class="center">
+    <div class="explanation-text4">
       <ul>
         <li>يجوز حذف الباء في صيغه أفعل به بشرط إذا دخلت علي المصدر المؤول مثل : أقبح (بأن) نتنهك الحرمات / أقبح (أن) نتنهك الحرمات</li>
         <li>
