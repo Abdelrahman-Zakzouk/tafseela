@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function ()
   };
   document.body.style.transition = "none"
 
-  var typingEffect = new Typed(".author",
+  var typingEffect = new Typed(".site-name",
   {
     strings: ["تفصيلة","&#x62A;فصيلة","&#1578;فصيلة"],
     loop: true,
