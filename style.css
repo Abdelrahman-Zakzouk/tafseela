@@ -2576,7 +2576,7 @@ body{
 
   ul{
     padding: 0;
-    font-size: 65%;
+    font-size: 80%;
   }
 
   .card p{
@@ -2592,18 +2592,22 @@ body{
   }
 
   .column-font{
-    font-size: 1.5em;
+    font-size: 1em;
   }
   
   .nav{
-    height: 40vh;
+    height: 45vh;
     padding-right: 2vw;
   }
 
   .vl{
     border-left: 4px solid #1f2029;
-    height: 30vh;
+    height: 35vh;
     border-radius: 2vw;
+  }
+
+  .nav-list{
+    font-size: 65%;
   }
 }
 
