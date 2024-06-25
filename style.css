@@ -2051,7 +2051,7 @@ li{
 
 .card {
   width: 80vw;
-  height: 50vh;
+  height: 55vh;
   border-radius: 4px;
   /* background: #212121; */
   display: flex;
@@ -2061,7 +2061,7 @@ li{
 }
 
 .card p {
-  height: 40vh;
+  height: 55vh;
   flex: 1;
   overflow: hidden;
   cursor: pointer;
