@@ -2594,6 +2594,17 @@ body{
   .column-font{
     font-size: 1em;
   }
+  
+  .nav{
+    height: 45vh;
+    padding-right: 2vw;
+  }
+
+  .vl{
+    border-left: 4px solid #1f2029;
+    height: 35vh;
+    border-radius: 2vw;
+  }
 }
 
 @media only screen and (max-width: 600px){
