@@ -361,6 +361,11 @@ body::-webkit-scrollbar-button:single-button:horizontal:increment {
   visibility: hidden;
 }
 
+.column-font{
+  font-size: 2vw;
+}
+
+
 .nav-lnk 
 {
   color: #785f9e;
