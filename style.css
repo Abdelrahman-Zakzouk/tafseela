@@ -21,6 +21,7 @@ body
   margin: 0;
   padding-right: 0;
   scroll-behavior: smooth;
+  padding-bottom: 10em;
 }
 
 html 
@@ -2049,13 +2050,14 @@ li{
 }
 
 .card {
-  /* width: 80vw; */
+  width: 80vw;
   height: 50vh;
   border-radius: 4px;
   /* background: #212121; */
   display: flex;
   gap: 5px;
   padding: .4em;
+  align-self: center;
 }
 
 .card p {
@@ -2193,6 +2195,14 @@ li{
   padding-inline: 5vw;
 }
 
+.row-boxes2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1vw;
+  padding-inline: 5vw;
+}
+
 .interactive{
   display: flex;
   flex-direction: row;
@@ -2227,7 +2237,7 @@ li{
   -webkit-text-stroke: 0px;
 }
 
-.dark-mode .intro, .dark-mode .title{
+.dark-mode .intro{
   color: #d1cbb0;
 }
 
@@ -2245,6 +2255,11 @@ li{
   transition: all 0s;
 }
 
+.explanation-text4{
+  display: flex;
+  flex-direction: column;
+}
+
 .dark-mode .card p:hover .unhide{
   color: #d1cbb0;
 }
@@ -2258,13 +2273,10 @@ li,p,span,ul,ol,b, .title, .cards, .card, .boxes{
   color: #d1cbb0;
 }
 
-.dark-mode .intro2{
-  color: #d1cbb0;
+.dark-mode .intro2, .dark-mode .title, .dark-mode .intro3{
+  color: rgb(168, 30, 30);
 }
 
-.dark-mode .intro3{
-  color: #d1cbb0;
-}
 
 .explanation-text4, .explanation-text5{
   text-align: center;
@@ -2404,12 +2416,16 @@ body{
     text-align: center;
     padding: 0;
     height: auto;
-    gap: 1em;
+    gap: 4em;
   }
   
   .section5{
     padding: 0;
     gap: 2em;
+  }
+
+  .section6{
+    gap: 4em;
   }
   
   
@@ -2478,11 +2494,30 @@ body{
   .row-boxes{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+    gap: 4vw;
+  }
+
+  .row-boxes2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4vw;
   }
 
   .boxes{
+    width: 100%;
+    height: 25vh;
+  }
+
+  .container{
+    width: 90%;
+  }
+  
+  .cards{
     width: 20vw; 
     height: 25vh;
+    font-size: 1em;
+    font-family: fred;
   }
 
   .face.back{
@@ -2534,6 +2569,18 @@ body{
   ul{
     padding: 0;
     font-size: 80%;
+  }
+
+  .card p{
+    padding-block: 5vh;
+  }
+
+  .card .hide{
+    font-size: 0.7em;
+  }
+
+  .hide{
+    line-height: 4vh;
   }
 }
 
