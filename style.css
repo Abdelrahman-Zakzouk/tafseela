@@ -365,7 +365,6 @@ body::-webkit-scrollbar-button:single-button:horizontal:increment {
   font-size: 2vw;
 }
 
-
 .nav-lnk 
 {
   color: #785f9e;
@@ -1959,9 +1958,9 @@ ion-icon {
   padding-top: 0;
 }
 
-hr{
+/*hr{
   color: black;
-}
+}*/
 
 .header{
   padding-inline: 0vw;
@@ -2577,7 +2576,7 @@ body{
 
   ul{
     padding: 0;
-    font-size: 70%;
+    font-size: 65%;
   }
 
   .card p{
