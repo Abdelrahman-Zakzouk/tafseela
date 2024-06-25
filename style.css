@@ -1954,6 +1954,10 @@ ion-icon {
   padding-top: 0;
 }
 
+hr{
+  color: black;
+}
+
 .header{
   padding-inline: 0vw;
 }
@@ -2051,7 +2055,7 @@ li{
 
 .card {
   width: 80vw;
-  height: 55vh;
+  height: 52vh;
   border-radius: 4px;
   /* background: #212121; */
   display: flex;
@@ -2061,7 +2065,7 @@ li{
 }
 
 .card p {
-  height: 55vh;
+  height: 52vh;
   flex: 1;
   overflow: hidden;
   cursor: pointer;
@@ -2568,7 +2572,7 @@ body{
 
   ul{
     padding: 0;
-    font-size: 80%;
+    font-size: 65%;
   }
 
   .card p{
@@ -2581,6 +2585,10 @@ body{
 
   .hide{
     line-height: 4vh;
+  }
+
+  .column-font{
+    font-size: 1em;
   }
 }
 
