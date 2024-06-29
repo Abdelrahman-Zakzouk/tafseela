@@ -575,17 +575,17 @@ img, svg{
 
 @font-face {
   font-family: Foda;
-  src: url(/tafseela/src/foda.ttf);
+  src: url(/src/foda.ttf);
 }
 
 @font-face {
   font-family: vlax;
-  src: url(/tafseela/src/Vlax.otf);
+  src: url(/src/Vlax.otf);
 }
 
 @font-face {
   font-family: fred;
-  src: url(/tafseela/src/fred.ttf);
+  src: url(/src/fred.ttf);
 }
 
 .intro{
@@ -1488,9 +1488,9 @@ body{
   .explanation-text4, .explanation-text3, .explanation-text, .explanation-text5{
     margin: 0;
     font-size: 1em;
-    width: 80%;
+    width: 90%;
     padding: 0;
-    align-self: center;
+    align-self: flex-start;
   }
 
   .explanation, .explanation2, .column{
@@ -1664,7 +1664,7 @@ body{
   }
   
   .nav{
-    width: 50%;
+    width: 95%;
     height: 25vh;
     padding-right: 2vw;
     padding-top: 0;
@@ -1678,7 +1678,7 @@ body{
   }
 
   .nav-list{
-    font-size: 65%;
+    font-size: 50%;
   }
 
 
@@ -1990,7 +1990,7 @@ body{
   }
   
   .nav{
-    width: 50%;
+    width: 95%;
     height: 25vh;
     padding-right: 2vw;
     padding-top: 0;
@@ -2004,14 +2004,14 @@ body{
   }
 
   .nav-list{
-    font-size: 65%;
+    font-size: 50%;
   }
 
 }
 
 @media only screen and (min-width: 601px){
   .page{
-    padding-top: 15vh;
+    padding-top: 10vh;
   }
 
   .header{
@@ -2327,8 +2327,8 @@ body{
   }
   
   .nav{
-    width: 50%;
-    height: 25vh;
+    width: 95%;
+    height: 30vh;
     padding-right: 2vw;
     padding-top: 0;
     align-self: center;
@@ -2350,9 +2350,6 @@ body{
 
   .logo-lnk{
     margin-top: 1.5vh;
-  }
-  .page{
-    padding-top: 15vh;
   }
 
   .header{
@@ -2668,8 +2665,8 @@ body{
   }
   
   .nav{
-    width: 50%;
-    height: 25vh;
+    width: 95%;
+    height: 40vh;
     padding-right: 2vw;
     padding-top: 0;
     align-self: center;
@@ -2677,12 +2674,12 @@ body{
 
   .vl{
     border-left: 4px solid #1f2029;
-    height: 20vh;
+    height: 80%;
     border-radius: 2vw;
   }
 
   .nav-list{
-    font-size: 65%;
+    font-size: 70%;
   }
 
 }
@@ -2693,6 +2690,10 @@ body{
     -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth;
     transition: all 0.5s;
+  }
+
+  .page{
+    padding-top: 0;
   }
 
   body 
@@ -3035,13 +3036,13 @@ body{
     place-items: center;
     justify-content: center;
     align-items: center;
-    padding-top: 7vh;
+    padding-top: 0;
     border-radius: 2vw;
     background-color: lavender;
     color: #082032;
     border: solid #1f2029;
-    width: 98vw;
-    height: 60vh;
+    width: 95%;
+    height: 45vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -3049,6 +3050,10 @@ body{
     transition-duration: 500ms;
     z-index: 100;
     visibility: hidden;
+  }
+
+  .nav-list{
+    font-size: 75%;
   }
 
   .column-font{
@@ -3265,17 +3270,17 @@ body{
 
   @font-face {
     font-family: Foda;
-    src: url(/tafseela/src/foda.ttf);
+    src: url(/src/foda.ttf);
   }
 
   @font-face {
     font-family: vlax;
-    src: url(/tafseela/src/Vlax.otf);
+    src: url(/src/Vlax.otf);
   }
 
   @font-face {
     font-family: fred;
-    src: url(/tafseela/src/fred.ttf);
+    src: url(/src/fred.ttf);
   }
 
   .intro{
@@ -3345,7 +3350,7 @@ body{
 
   .vl {
     border-left: 6px solid #1f2029;
-    height: 50vh;
+    height: 80%;
     border-radius: 2vw;
   }
 
@@ -3362,7 +3367,6 @@ body{
     width: 100vw;
     margin: 0;
     padding-top: 10vh;
-    height: 70vh;
     text-align: center;
   }
 
@@ -3555,7 +3559,7 @@ body{
     align-content: center; */
     text-align: right;
     line-height: 6vh;
-    padding: 3vw;
+    /* padding: 3vw; */
   }
 
   .explanation-text{
@@ -3974,6 +3978,10 @@ body{
     border-color: wheat;
   }
 
+  .ul{
+    width: 100%;
+  }
+
   .sectiontext, .sectiontextonly, .sectiontextwide, .explanation-text, .explanation-text2, .explanation-text3, .explanation-text4, .explanation-text5, .card p:hover .unhide{
     color: black;
     transition: all 0s;
@@ -4048,4 +4056,21 @@ body{
 
   } */
 
+}
+
+a {
+  color: #337ab7;
+  cursor: pointer;
+}
+
+.yt a{
+  color: #ff5a91;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.yt{
+  padding-top: 5%;
+  font-family: fred;
 }

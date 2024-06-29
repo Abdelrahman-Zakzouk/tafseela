@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function ()
     document.getElementById('theme-switch').setAttribute('checked', true);
   };
   document.body.style.transition = "none"
-
+  
   var typingEffect = new Typed(".site-name",
   {
     strings: ["تفصيلة","&#x62A;فصيلة","&#1578;فصيلة"],
@@ -80,15 +80,15 @@ function isTouchDevice() {
 if (touch)
 {
   function anim()
-    {
-      var bartop = document.getElementById("bartop");
-      var barbottom = document.getElementById("barbottom");
-      bartop.style.transform="scaleX(1)";
-      barbottom.style.transform="scaleX(1)";
-    }
-    
-    function unanim()
-    {
+  {
+    var bartop = document.getElementById("bartop");
+    var barbottom = document.getElementById("barbottom");
+    bartop.style.transform="scaleX(1)";
+    barbottom.style.transform="scaleX(1)";
+  }
+  
+  function unanim()
+  {
       var bartop = document.getElementById("bartop");
       var barbottom = document.getElementById("barbottom");
       bartop.style.transform="scaleX(1)";
@@ -104,7 +104,7 @@ if (touch)
       bartop.style.transform="scaleX(1.7)";
       barbottom.style.transform="scaleX(1.99)";
     }
-
+    
     function unanim()
     {
       var bartop = document.getElementById("bartop");
@@ -130,3 +130,9 @@ if (touch)
     }
   };
 
+  
+  function scrollSmoothTo(sectionId) {
+    var section = document.getElementById(sectionId);
+    section.scrollIntoView(true);
+
+  }
