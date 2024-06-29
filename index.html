@@ -1,89 +1,500 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.12.2/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.12.2/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.12.2/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.12.2/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.12.2/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.12.2/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.12.2/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.12.2/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.12.2/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.12.2/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<html lang='ar' dir="rtl">
+<head>
+	<!-- UTF-8 -->
+	<meta charset='UTF-8'>
+	<!--  -->
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<!-- Device-screen specs -->
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<!-- Page Title -->
+	<title>تفصيلة</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/src/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/src/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/src/favicon-16x16.png">
+  <link rel="manifest" href="/src/site.webmanifest">
+	<!-- Link Styling CSS file -->
+	<link rel='stylesheet' type='text/css' href='/style.css'>
+	<!-- Link Google fonts -->
+	<link rel='preconnect' href='https://fonts.googleapis.com'> 
+	<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&amp;display=swap" rel="stylesheet">
+  <!-- Link Scripting JS File & Typed Module -->
+	<script src='/script.js'></script>
+	<script src='https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js'></script>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body id="body">
+	
+  <button class="scroll-to-top" id="scroll-to-top" onclick="back()">
+    <ion-icon size="large" name="chevron-up-outline"></ion-icon>
+  </button>
+	
+	<div class="header" dir="ltr">
+    <div class="header-content" >
+      <div class="interactive">
+        <div class="navburger" id="navburger">
+          <button class="navburger-button" id="navburger-button" onclick="navtoggle()" onmouseenter="anim()" onmouseleave="unanim()">E</button>
+          <span class="bartop" id="bartop">e</span>
+          <span class="barmid" id="barmid">e</span>
+          <span class="barbottom" id="barbottom">e</span>
+        </div>
+        <label class="theme-switch">
+          <input type="checkbox" class="theme-switch__checkbox" onclick="theme()" id="theme-switch">
+          <div class="theme-switch__container">
+            <div class="theme-switch__clouds"></div>
+            <div class="theme-switch__stars-container">
+              <svg viewBox="0 0 144 55" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z" fill="currentColor"></path>
+              </svg>
+            </div>
+            <div class="theme-switch__circle-container">
+              <div class="theme-switch__sun-moon-container">
+                <div class="theme-switch__moon">
+                  <div class="theme-switch__spot"></div>
+                  <div class="theme-switch__spot"></div>
+                  <div class="theme-switch__spot"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </label>
+      </div>
+      <div class="logo" id="logo" dir="rtl">
+        <a href="https://mls-tafseela.web.app/" class="logo-lnk">
+          <div class="logo-top">
+            <span class="site-name" id="site-name"></span>
+					</div>
+        </a>
+      </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <div class="nav" id="nav" dir="rtl">
+      <div class="navcolumnright">
+        <span class="column-font" >تاريخ اللغة العربية</span>
+        <ul class="nav-list">
+          <li><a onclick="unnavpageclk();scrollSmoothTo('1')">1 بداية اللغة العربية</a></li>
+          <li><a onclick="unnavpageclk();scrollSmoothTo('2')">2 بداية تحريف اللغة العربية</a></li>
+          <li><a onclick="unnavpageclk();scrollSmoothTo('3')">3 الصراعات النحوية وتاريخ النحو</a></li>
+          <li><a onclick="unnavpageclk();scrollSmoothTo('4')">4 النحو في عصرنا</a></li>
+        </ul>
+      </div>
+      <div class="vl"></div>
+      <div class="navcolumnleft">
+        <span class="column-font" >أسلوب التعجب</span>
+        <ul class="nav-list">
+          <li><a onclick="unnavpageclk();scrollSmoothTo('5')">5 أسلوب التعجب وأنواعه</a></li>
+          <li><a onclick="unnavpageclk();scrollSmoothTo('6')">6 صياغة فعل التعجب بطريقه مباشرة</a></li>
+          <li><a onclick="unnavpageclk();scrollSmoothTo('7')">7 صياغة فعل التعجب بطريقه غير مباشرة</a></li>
+          <li><a onclick="unnavpageclk();scrollSmoothTo('8')">8 أغراض أسلوب التعجب</a></li>
+        </ul>
+      </div>
+      <!--<div class="navcolumn">
+        <ul>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+          <li><a href="#9" onclick="unnavpageclk()">9</a></li>
+        </ul>
+      </div>-->
+    </div>
+  </div>
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <div class="page" id="page" onclick="unnavpageclk()">
+    <section class="section0">
+      <img class="letters" id="letters" src="/src/ض.svg" alt="ض" style="display: block; margin: auto;">
+      <p class="intro">معًا لإحياء اللغة العربية</p>
+      <br>
+      <div class="title" id="1">بداية اللغة العربية</div>
+      <div class="content">
+        <div class="pic">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDwlsxWcdGfO0olju57k1gwRMbj2hdoeekQkqSOThD0AuEI7ec3dz_esw-0o3mU42FCo3dXfTp2UEdqi0V18OO5VCEvbAvduT90kgrX2YkFlr3narT6iM-arpSYy6CPbMqMUVPMyJNzZEytqCvcWrg9mE_GAh9VnKEb5fYwS8uTOM8p-Z7iqZnHpsPNG0/s800-rw/cuneiform-writing%20-%20sumarien-civilisation%20-%20trending-on-artstation-sharp-focus-studio-photo-intric%20(1)%20(1)%20(1).png" class="sectionpics" alt=" ">
+        </div>
+        <div class="text">
+          <p class="sectiontext">
+            لم تكن اللغة العربية أول لغة أو اللغة التي يتحدث بها سيدنا آدم كما يعتقد البعض بل كانت بدايتها قبل العرب فهناك الكثير من القصص حول نشأة اللغة العربية فقيل ان سيدنا اسماعيل هو أول من تحدث وكتب باللغة العربية ولكن هناك أقوال أخرى أن اللغة العربية بدأت منذ القرن التاسع قبل الميلاد حيث وجدوا أسماء مكتوبة باللغة العربية في نقوش مسمارية يعود أصلها الى الآشوريين, كلها قصص و روايات عن بداية اللغة العربية أن تطرقنا لها لن تنتهي ولكن هل هذا هو تاريخ اللغة العربية, بالعكس بل للغة العربية تاريخ من التغيرات
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section2" id="2">
+      <div class="title">بداية تحريف اللغة العربية</div>
+      <div class="content-reversed">
+        <div class="pic">
+          <img src="https://image.invaluable.com/housePhotos/christies/55/226055/H0027-L08667682.jpg" class="sectionpicsthin" alt=" ">
+        </div>
+        <div class="text">
+          <p class="sectiontextwide">
+            لقد كانت ذروة اللغة العربية تاريخيًا أثناء الفتوحات الاسلامية ولكي نتعمق في بداية تغيير اللغة العربية فقد كان لفتح الأندلس ودول اخرى مثل الصين والهند دورا كبيرا حيث كان الأندلسيون و سكان باقي الدول لا يتكلمون باللغة العربية وعملوا على تعلمها من أجل تعلم علوم المسلمين وانخراطهم معهم أدبيا واهم شئ كان تعلم القرآن والأحاديث والسنه النبوية وبسبب الانخراط مع العرب, فكان التحدث باللغة الفصحى صعبا لهم خاصة النحو فقد كان التحدث باللغة العربية بالنسبة للعرب بدون أخطاء نحوية شئ فطري فقد كانت هذه اللغة هي المعجزة التي نزل بقا القرآن فنتيجة لبداية تغيير النحو بسبب عدم قدرة غير العربيين على نطق الكلام بالطريقة الصحيحة والتحدث باللغة الفصحى قام علي بن أبي طالب بأمر أبو الأسود الدؤلي بوضع علم النحو للعديد من الاسباب فقد كان لتغيير النحو واللغة اضرار كثيرة أبرزها تعلم القرآن فقد تتغير معاني بسبب رفع كلمه بدلا من كسرها في موضعها, فكان ابو الاسود الدؤلي أول من وضع كتاب لعلم النحو وأول من وضع الحروف على الكلام لتسهيل قرائته, كان هذا بداية عصر تسجيل النحو و علومه و المذهبين النحويين ,مذهب الكوفيين ومذهب البصرة والذين كان بينهما الكثير من الصراعات الادبيه والشعريه والنحوية على أيهما الأحق على تولي راية القيادة و كونها منارة علوم النحو واللغة العربيه في الوطن الاسلامي          </p>
+        </div>
+      </div>
+    </section>
+    <section class="sections" id="3">
+      <div class="title">الصراعات النحوية وتاريخ النحو
+      </div>
+      <div class="content-no-pic">
+        <!-- <div class="pic">
+          <img src="/src/horse.jpg" class="sectionpics" alt=" ">
+        </div> -->
+        <div class="text-only">
+          <p class="sectiontextonly">
+            كما ذكرنا فأول من بدأ النحو هو أبو الأسود الدؤلي حيث وضع أساسيات النحو في شرح الاسم والفعل والحرف و استخداماتهم وكانت هذه الوثيقة باب لعلوم النحو كان الصراع النحوي بين مذهبين الكوفة والبصرة كما ذكرنا ولكن ما الفرق بينهم ما ميز الكوفة في هذا الوقت هو تسجيلهم لما وصلو إليه على عكس أهل البصرة الذين استطاعوا تطوير ما بدأه الدؤلي ولكنهم لم يسجلوا ما وصلوا إليه اهتم أهل البصرة بالقواعد النحوية من اعراب و قواعد الجملة وتكوينها ونطق الكلام بالطريقة الصحيحة لتسهيل فهمه على عكس أهل الكوفة حيث أرادوا أن يتميزوا عن أهل البصرة فاهتموا اكثر بعلم الصرف ولكن ما الفرق, النحو هو الاهتمام بإعراب الكلام من رفع و كسر و نصب أما الصرف فهو الاهتمام بالكلمة والجملة وليس إعرابها على سبيل المثال تغيير الكلمات عند التثنية أو الجمع أو التأنيث مع أن في هذا العصر كان هذا صراعا على من هو احق بان يكون رائد اللغة العربية في العالم الاسلامي الا ان النحو والصرف يعتبران الآن مكملان لبعضهما البعض بل ان بعض الناس يعتقدون أنهم شئ واحد كانت البصرة هي أول من سجلت ما توصلت إليه وكان أول كتاب يتم تسجيله هو كتاب الفيصل كان اهتمام البصرة بقواعد النحو من أجل تجنب سوء الفهم خاصة في فهم القرآن فقد كان القرآن هو مرجع النحو واستطاعوا استخراج قواعد النحو بدراسة القرآن ولكنه لم يكن المصدر الوحيد لهم لعلم النحو بل كانوا يذهبون لاهل البدو الذين لم يختلطوا بغير العرب لسماع اللغة العربية الصحيحة فطريا منهم وأبرز من استطاع جمع النحو بهذه الطريقة هو الخليل بن أحمد ولكنه كباقي علماء البصرة لم يقم بتسجيل ما توصل إليه بل اكتفى بتعليمه لتلاميذه, كل هذه المجهودات لم نكن لنستطيع أن نجزم بصحتها خاصة مع اختلاف طرق و تفكير المذهبين في النحو والمصادر حتى جاء أهم عالم في تاريخ علوم النحو والذي لم يكن حتى لأصل عربي بل لأصل فارسي وهو العالم سيبويه وكان سبب اهتمام عالم فارسي بالنحو هو عدم استطاعته التحدث باللغة العربية بفصاحة فأراد أن يجمع علما للنحو لا يستطيع أحد أن يعدل عليه وبدأ بالتعلم على يد الخليل بن أحمد وسيبويه هو من قام بتسجيل ما توصل اليه العالم خليل بن أحمد في النحو وكان من أوائل من قاموا بالتسجيل في اهل البصرة, واستمر سيبويه في أبحاثه في النحو خاصة في البادية حتى استطاع كتابة كتاب هو الرائد في عصره بل وما زال يستخدم كمرجع أول للنحو حتى هذا الزمن وهو كتاب "الكتاب" ولم يكن سيبويه من سماه بل هو وضع جميع العلوم به ولم يسميه حتى سماه الناس بهذا الاسم نظرا لمكانته واهميته لم ينتهي صراع الكوفة والبصرة حتى الآن فكل دولة تتبع منهج منهما وكمثال فمصر حتى الآن تتعامل وتتعلم المنهج الخاص بالكوفى
+          </p>
+          <br>
+        </div>
+      </div>
+    </section>
+    <section class="sections" id="4">
+      <div class="title">النحو في عصرنا</div>
+      <div class="content">
+        <div class="pic">
+          <img src="/src/horse.jpg" class="sectionpics" alt=" ">
+        </div>
+        <div class="text">
+          <p class="sectiontext">
+            في هذا العصر لم يعد هناك من يتحدث اللغة الفصحى الصحيحة بل إن الناس الآن تتعجب من اقوال و تسجيلات العرب القدامى وابسط مثال هو تعامل الناس مع أشعار الجاهلية فهم يرون أنها كلام غير مفهوم يحتاج للتفسير وأنها ألفاظ جذله و ثقيلة على اللسان أما النحو الصحيح فقد اقتصر على كتب علوم اللغة والقرآن الكريم ولم يعد هو الطريقة الأساسية للتحدث بل وأن بعض الناس أصبحت تفضل باقي اللغات على اللغه العربيه ويعتبرونها معبرة اكثر منها لكونهم لغات أسهل من اللغة العربية وكنهاية فالعالم العربي يحاول بكل المجهودات الممكنة إحياء اللغة بعدا تم طمسها ولم تعد لغة رائدة في العالم كاللغة الإنجليزية أو اللغة الفرنسية.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section5" id="5">
+      <p class="explanation-text4"><span class="intro2">أسلوب التعجب</span><br>هو عمل لغوي ينشئه المتعجب للتعبير عن اعجابه او كرهه للأشياء أو الأحداث أو الأشخاص</p>      
+      <div class="intro2">أنواع أسلوب  التعجب</div>
+      <div class="content-reversed1">
+        <div class="explanation">
+          <p class="explanation-title">تعجب قياسي:</p>
+          <div class="explanation-text4">هو ما له أوزان محدده لا تتغير وتنقسم إلي : (ما أفعله ! ، أفعل به !)</div>
+            <p class="explanation-title">أمثلة:</p>
+          <p class="explanation-text3">
+             ما أفعله : ما أجمل صحراءنا ! , ما أروع الحرية ! , ما أجمل أن يتحلي المؤمن بالصدق !
+             أفعل به : أجمل بصحرائنا ! , أروع بالحرية ! , أجمل بأن يتحلي المؤمن بالصدق !
+          </p>
+          <p class="explanation-title">
+            إعرابه:
+          </p>
+            <div class="column">
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+              <p class="explanation-subtitle">
+                ما أجمل السماء !
+              </p>
+              <p class="explanation-text">
+              ما: تعجبية نكرة تامة بمعنى (شيء) مبنية على السكون في محل رفع مبتدأ.
+              <br>
+              أجمَل : فعل ماض لإنشاء التعجب مبني على الفتح.
+              <br>
+              الفاعل : ضمير مستتر وجوبا تقديره (هو)، والجملة الفعلية في محل رفع خبر.
+              <br>
+              السماء : مفعول به منصوب وعلامة نصبها لفَتْحَة الظاهرة على آخره.
+              <br>
+              <br>
+              </p>
+            </div>
+            <div class="column">
+
+              <p class="explanation-subtitle">
+                أجمل بالسماء !
+              </p>
+              <p class="explanation-text">
+              أجمل : فعل ماض جاء علي صيغه الأمر للتعجب مبني علي الفتح المقدر.
+              <br>
+              الباء : حرف جر زائد مبني علي الكسر لا محل له من الإعراب.
+              <br>
+              السماء : فاعل مرفوع محلا مجرور لفظًا.
+              <br>
+              </p>
+            </div>
+          <span class="note">ملاحظة هامة : هذا الإعراب ثابت لا يتغير في أي جمله لكل وزن من الأوزان.</span>
+        </div>
+        <hr>
+        <div class="explanation">
+          <p class="explanation-title">تعجب سماعي:</p>
+          <div class="explanation-text4">هو ما ليس قياسي وليس له أوزان محدده</div>
+          <p class="explanation-title">
+            أمثلة:
+          </p>
+          <p class="explanation-text4">
+            سبحان الله !
+            <br>
+            لله درك !
+            <br>
+            يا لجمال الطبيعة !
+            </p>
+            <p class="explanation-title">
+            إعرابه:
+            </p>
+            <p class="explanation-text5">
+            الأوزان السماعيه لا يوجد لها إعراب ثابت (تعرب حسب الجمله)
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="sections" id="6">
+      <p class="explanation-text4"><span class="intro2">صياغة فعل التعجب</span><br>يصاغ فعل التعجب بطريقه مباشره إذا توافرت به سبع شروط في وقت واحد</p>    
+      <div class="content-no-pic">
+        <div class="text-only">
+          <p class="center"><span class="intro2">شروط صياغة فعل التعجب بطريقه مباشرة:</span></p>
+          <center class="row-boxes">
+
+            <div class="row-boxes4">
+              <div class="container">
+                <div class="boxes">
+                  <div class="face back">
+                    <div class="content">
+                      <p class="desc">
+                        فلا يصاغ من فعل زادت حروفه عن ثلاث
+                      </p>
+                    </div>
+                  </div>
+                  <div class="face front">
+                    <b>ثلاثي</b>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="boxes">
+                  <div class="face back">
+                    <div class="content">
+                      <p class="desc">
+                        مثل : ( حمراء، صفراء، شقراء )
+                      </p>
+                    </div>
+                  </div>
+                  <div class="face front">
+                    <b class="small">ألا تكون الصفه المؤنثه منه علي وزن فعلاء</b>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="boxes">
+                  <div class="face back">
+                    <div class="content">
+                      <p class="desc">
+                        فلا يكون فعلا ناقصا مثل كان و أخواتها
+                      </p>
+                    </div>
+                  </div>
+                  <div class="face front">
+                    <b>تاما</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row-boxes4">
+              <div class="container">
+                <div class="boxes">
+                  <div class="face back">
+                    <div class="content">
+                      <p class="desc">
+                        فلا يأتي منه مبني للمجهول
+                      </p>
+                    </div>
+                  </div>
+                  <div class="face front">
+                    <b>مبني للمعلوم</b>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="boxes">
+                  <div class="face back">
+                    <div class="content">
+                      <p class="desc">
+                        فلا يمكن أن يكون منفيا
+                      </p>
+                    </div>
+                  </div>
+                  <div class="face front">
+                    <b>مثبت</b>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="boxes">
+                  <div class="face back">
+                    <div class="content">
+                      <p class="desc">
+                        فلا يكون جامد مثل :   ( نعم، بئس )
+                      </p>
+                    </div>
+                  </div>
+                  <div class="face front">
+                    <b>متصرف</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              <div class="row-boxes4">
+                <div class="container">
+                  <div class="boxes">
+                    <div class="face back">
+                      <div class="content">
+                        <p class="desc">
+                          أن يكون قابل للتفاضل في الزياده أو النقصان
+                        </p>
+                      </div>
+                    </div>
+                    <div class="face front">
+                      <b>قابل للتفاوت</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+
+          </center>
+
+          <!--<center>
+            <div class="list">
+              <ol>
+                <li>ثلاثي : فلا يصاغ من فعل زادت حروفه عن ثلاث</li>
+                <li>ألا تكون الصفه المؤنثه منه علي وزن فعلاء مثل : ( حمراء، صفراء، شقراء )</li>
+                <li>أن يكون تاما : فلا يكون فعلا ناقصا مثل كان و أخواتها</li>
+                <li>أن يكون مبني للمعلوم : فلا يأتي مبني للمجهول</li>
+                <li>أن يكون مثبتا : فلا يمكن أن يكون منفيا</li>
+                <li>أن يكون متصرف : فلا يكون جامد مثل : ( نعم، بئس )</li>
+                <li>أن يكون قابل للتفاوت : بمعني أن يكون قابل للتفاضل في الزيادة أو النقصان</li>
+              </ol>
+            </div>
+          </center>-->
+        </div>
+      </div>
+    </section>
+    <section class="section5" id="7">
+      <p class="center"><span class="intro3">إذا فقد الفعل أي شرط من الشروط ، فسيصاغ بطريقه غير مباشرة كالآتي:</span></p>
+    <div class="content-reversed">
+      <div class="explanation">
+        <p class="explanation-title"> إذا كان الفعل :</p>
+        <div class="explanation-text4">
+          <ul>
+            <li>غير ثلاثي ( استخرج )</li>
+            <li>الصفه المؤنثه منه تأتي علي وزن فعلاء ( خضر )</li>
+            <li>ناقص ( كان )</li>
+          </ul>
+          <p class="explanation-title">يصاغ بطريقتين :</p>
+          <ul>
+            <li>المصدر الصريح : ما أجمل إستخراج الذهب من باطن الأرض !</li>
+            <li>المصدر المؤول : ما أحسن أن يكون المؤمن صادقًا !</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="explanation">
+        <p class="explanation-title"> إذا كان الفعل :</p>
+        <div class="explanation-text4">
+          <ul>
+            <li>مبني للمجهول ( فُهِمَ )</li>
+            <li>منفي ( لا يكذب )</li>
+          </ul>
+          <p class="explanation-title">يصاغ بطريقه واحدة :</p>
+          <ul>
+            <li>المصدر المؤول : ما أجمل ألا يكذب المؤمن ! ، ما أحسن أن يُفْهَم الدرس !</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="explanation">
+        <p class="explanation-title"> إذا كان الفعل :</p>
+        <div class="explanation-text4">
+          <ul>
+            <li>جامد : (نعم ، بئس)</li>
+            <li>غير قابل للتفاوت ( مات ، عاش )</li>
+          </ul>
+          <p class="explanation-title">لا يمكن أن يصاغ منه تعجب</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section6" id="8">
+    <p class="center"><span class="intro2">أغراض أسلوب التعجب :</p>
+    <div class="content-no-pic">
+      <div class="cards-container">
+        <center class="row-boxes2">
+          <div class="cards" id="card1">المدح</div>
+          <div class="cards" id="card2">الشّكوى</div>
+          <div class="cards" id="card3">الذّم والهجاء</div>
+        </center>
+        <center class="row-boxes3">
+          <div class="cards" id="card4">التّمني</div>
+          <div class="cards" id="card5">الوعيد</div>
+        </center>
+      </div>
+    </div>
+  </section>
+  <section class="sections"></section>
+    <div class="explanation2">
+      <p class="explanation-title">ملاحظات هامة :</p>
+      <div class="explanation-text4">
+        <ul>
+          <li>يجوز حذف الباء في صيغه أفعل به بشرط إذا دخلت علي المصدر المؤول مثل : أقبح (بأن) نتنهك الحرمات / أقبح (أن) نتنهك الحرمات</li>
+          <li>
+            المصدر المؤول هو :
+            <ul style="padding: revert;">
+              <li>أن + فعل مضارع</li>
+              <li>ما + فعل ماض</li>
+              <li>أن + جمله اسمية</li>
+            </ul>
+          </li>
+          <li>لاحظ الفرق بين الجملتين الآتيتين:</li>
+        </ul>
+        <div class="card">
+          <p>
+            <span>ما أجملَ الطبيعةَ !</span>
+            <span class="hide">
+                <span class="unhide">أسلوب تعجب</span>
+                <span class="unhide">ما : نكرة تعجبية مصدرية</span>
+                <span class="unhide">أجملَ : فعل ماض مبني علي الفتح</span>
+                <span class="unhide">الطبيعةَ : مفعول به منصوب بالفتحة</span>
+            </span>
+          </p>
+          <p>
+            <span>ما أجملُ الطبيعةِ ؟</span>
+            <span class="hide">
+              <span class="unhide">أسلوب استفهام</span>
+              <span class="unhide">ما : أداة استفهام</span>
+              <span class="unhide">أجملُ : مبتدأ مرفوع بالضمه (اسم)</span>
+              <span class="unhide">الطبيعةِ : مضاف إليه مجرور بالكسرة</span>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section5">
+    <div class="yt">
+      <a href="https://youtu.be/vLPivr2zaoc" target="_blank"><ion-icon name="logo-youtube"></ion-icon>فيديو توضيحي لموقع تفصيلة</a>
+    </div>
+  </section>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBnScux4g7ZIUJ__QByrzCZnkZg7Baxbqo",
+      authDomain: "tafseela-mls.firebaseapp.com",
+      projectId: "tafseela-mls",
+      storageBucket: "tafseela-mls.appspot.com",
+      messagingSenderId: "799464553734",
+      appId: "1:799464553734:web:0902ba4abe7f54e3f8f287",
+      measurementId: "G-XGQH92WKCS"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
 </html>

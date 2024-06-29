@@ -3658,6 +3658,7 @@ body{
 
   hr{
     border-color: #ecca2f;
+    display: block;
   }
 
   .header{
